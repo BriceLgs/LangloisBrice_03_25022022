@@ -1,0 +1,35 @@
+.reserver {
+  text-align: center;
+}
+
+.reserver h2 {
+  margin-top: 2.2rem;
+  font-size: 2rem;
+}
+
+.reserver p {
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+.reserver button {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  -webkit-transition: all 170ms;
+  transition: all 170ms;
+  -webkit-box-shadow: 2px 1px 14px -3px #000000;
+          box-shadow: 2px 1px 14px -3px #000000;
+}
+
+.reserver button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  opacity: 0.9;
+}
+/*# sourceMappingURL=reserver.css.map */
