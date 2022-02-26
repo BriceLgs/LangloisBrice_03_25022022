@@ -32,3 +32,36 @@ main .ville {
 main .ville i {
     font-size: 1.4rem;
 }
+
+/* Reserver */
+
+.reserver {
+    text-align: center;
+}
+
+.reserver h2 {
+    margin-top: 2.2rem;
+    font-size: 2rem;
+}
+
+.reserver p {
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+}
+
+.reserver button {
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 1px 14px -3px #000000;
+    transition: all 170ms;
+}
+
+.reserver button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
