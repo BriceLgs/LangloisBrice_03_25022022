@@ -4,6 +4,7 @@
   "description": "\"p3 formation\"",
   "main": "index.js",
   "scripts": {
+    "sass": "sass --watch style.scss style.css"
     
   },
   "repository": {

@@ -1,0 +1,116 @@
+@mixin heartlike {
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1));
+ };
+
+@mixin font-awesome {
+    display: flex;
+    font-style: normal;
+    position: absolute;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+    --webkit-font-smoothing: antialiased;
+    font-weight: 900;
+    top: 50%;
+    font-size: 22px;
+    transform: translateY(-50%);
+}
+
+@mixin zoom($zoom-level: 1.02, $transformation: none) {
+    transform: $transformation scale($zoom-level);
+}
+
+@mixin zoomcard {
+    transform: scale(1.02);
+}
+
+@mixin boxshadow-principale {
+    box-shadow: 1px 2px 12px -7px #000000;
+}
+
+@mixin heart-anim {
+    position: relative;
+    i {
+            font-size: 2.1rem;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .fas {
+            color: transparent;
+            @include heartlike;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: all 230ms ease-out;
+        }
+        
+         &:hover .fas {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.2);
+        }
+        &:active .fas {
+            transform: translateY(-50%) scale(1.1);
+        }
+}
+
+@mixin spin-check {
+@keyframes spin-check {
+    0% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+}
+
+@mixin buttongradiant {
+    margin-top: 1rem;
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding: 1.2rem 4rem;
+       border: none;
+       border-radius: 2rem;
+       transition: all 170ms;
+       @include boxshadow-principale;
+       @include heartlike;
+       cursor: pointer;
+       &:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+   }
+
+}
+
+@mixin loader {
+    position: fixed;
+    background-color: #ffff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 1;
+    animation: disappear 2s forwards;
+    transform-origin: top;
+    i {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      transform: translateY(-50%);
+      transform: translateX(-50%);
+      font-size: 130px;
+      color: #9356dc;
+    }
+
+    @keyframes disappear {
+        0% {
+          opacity: 1;
+        }
+      
+        100% {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+}

@@ -1,0 +1,15 @@
+@import "../Utils/colors";
+
+footer {
+    background-color: $footer-background;
+    padding: 1rem 2rem;
+    color: white;
+    h2 {
+        font-family: "Shrikhand", sans-serif;
+        font-weight: 700;
+        padding: 1rem 0;
+    }
+    p {
+        padding: .2rem;
+    }
+}
