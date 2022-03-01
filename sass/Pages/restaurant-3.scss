@@ -1,0 +1,162 @@
+@import "../Utils/mixins";
+@import "../base";
+@import "../Utils/variables";
+@import "../Utils/colors";
+
+
+
+.bannerimg img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+header{
+
+    &:hover::before {
+        @include zoom(1.2, translateY(-50%));
+        ;
+    }
+    
+    &::before {
+        transition: transform 0.2s;
+        @include font-awesome;
+        content: "\f060";
+        left: 1rem;
+    }
+        
+    }
+
+
+.titre-restau {
+    @include heart-anim;
+    padding: 1rem 1rem;
+    margin-top: -2rem;
+    background-color: $lightergrey;
+    border-radius: 2rem 2rem 0 0;
+    h2 {
+        padding: 0.5rem 0rem;
+        font-family: "Shrikhand", sans-serif;
+    }
+}
+
+.resto-main {
+    padding: 0rem 1rem;
+    background-color: $lightergrey;
+
+    
+    .plat-grid {
+        display: grid;
+        gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: $breakpoint) {
+        grid-template-columns: 1fr;
+    }
+    h3 {
+        font-weight: 400;
+        text-transform: uppercase;
+        color: lighten($color: #000000, $amount: 20%);
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 0.2rem;
+            width: 3.2rem;
+            background-color: $color-tertiaire;
+            top: 1.5rem;
+            left: 0rem;
+        }
+    }
+
+    .plat-info {
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .plat-description {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            @include boxshadow-principale;
+            border-radius: 1rem;
+            margin: 0.5rem;
+            &:hover {
+                cursor: pointer;
+                .card-check {
+                margin-right: 0;
+            }
+            i {
+                @include spin-check;
+                animation: spin-check .5s;
+            }
+            }
+            h4 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            }
+            .prix {
+                margin-left: auto;
+                padding: 1rem;
+                font-weight: 900;
+                display: flex;
+                align-items: flex-end;
+            }
+            .card-description {
+                padding: 1rem;
+                overflow: hidden;
+                
+            }
+            
+            }
+            .card-check {
+                flex-shrink: 0;
+                display: grid;
+                place-items: center;
+                border-radius: 0 1rem 1rem 0;
+                $width-check: 4rem;
+                margin-right: -$width-check;
+                background-color: $color-tertiaire;
+                width: $width-check;
+                transition: margin-right 0.5s;
+
+                i {
+                    display: grid;
+                    place-items: center;
+                    background: white;
+                    aspect-ratio: 1;
+                    width: 2rem;
+                    border-radius: 1rem;
+                    color: $color-tertiaire;
+                }
+                
+            }
+            
+        }
+        
+        section.buttoncommander {
+            padding: 4rem 0;
+            text-align: center;
+            background-color: $lightergrey;
+            button {
+        @include buttongradiant;
+            }
+            margin-bottom: 1rem;
+        }
+
+
+    
+    
+
+

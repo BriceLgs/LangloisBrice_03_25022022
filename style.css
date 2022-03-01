@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
 *,
 ::before,
 ::after {
@@ -227,16 +230,20 @@ header {
   background-size: cover;
 }
 .menus .card__img-1 {
-  background-image: url("/assets/plat-1.jpg");
+  background-image: url("./assets/plat-1.jpg");
+  background-size: cover;
 }
 .menus .card__img-2 {
-  background-image: url("/assets/plat-2.jpg");
+  background-image: url("./assets/plat-2.jpg");
+  background-size: cover;
 }
 .menus .card__img-3 {
-  background-image: url("/assets/plat-3.jpg");
+  background-image: url("./assets/plat-3.jpg");
+  background-size: cover;
 }
 .menus .card__img-4 {
-  background-image: url("/assets/plat-4.jpg");
+  background-image: url("./assets/plat-4.jpg");
+  background-size: cover;
 }
 .menus .card__info {
   position: relative;
@@ -283,6 +290,642 @@ footer h2 {
 }
 footer p {
   padding: 0.2rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bannerimg img {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+header:hover::before {
+  transform: translateY(-50%) scale(1.2);
+}
+header::before {
+  transition: transform 0.2s;
+  display: flex;
+  font-style: normal;
+  position: absolute;
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: "Font Awesome 5 Free";
+  --webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  top: 50%;
+  font-size: 22px;
+  transform: translateY(-50%);
+  content: "\f060";
+  left: 1rem;
+}
+
+.titre-restau {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-top: -2rem;
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
+}
+.titre-restau i {
+  font-size: 2.1rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.titre-restau .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 230ms ease-out;
+}
+.titre-restau:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+.titre-restau:active .fas {
+  transform: translateY(-50%) scale(1.1);
+}
+.titre-restau h2 {
+  padding: 0.5rem 0rem;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.resto-main {
+  padding: 0rem 1rem;
+  background-color: #f6f6f6;
+}
+.resto-main .plat-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1000px) {
+  .resto-main .plat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.resto-main .plat-grid h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.resto-main .plat-grid h3::after {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  width: 3.2rem;
+  background-color: #99e2d0;
+  top: 1.5rem;
+  left: 0rem;
+}
+.resto-main .plat-grid .plat-info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resto-main .plat-grid .plat-description {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 1px 2px 12px -7px #000000;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+.resto-main .plat-grid .plat-description:hover {
+  cursor: pointer;
+}
+.resto-main .plat-grid .plat-description:hover .card-check {
+  margin-right: 0;
+}
+.resto-main .plat-grid .plat-description:hover i {
+  animation: spin-check 0.5s;
+}
+@keyframes spin-check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.resto-main .plat-grid .plat-description h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resto-main .plat-grid .plat-description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resto-main .plat-grid .prix {
+  margin-left: auto;
+  padding: 1rem;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-end;
+}
+.resto-main .plat-grid .card-description {
+  padding: 1rem;
+  overflow: hidden;
+}
+.resto-main .card-check {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 0 1rem 1rem 0;
+  margin-right: -4rem;
+  background-color: #99e2d0;
+  width: 4rem;
+  transition: margin-right 0.5s;
+}
+.resto-main .card-check i {
+  display: grid;
+  place-items: center;
+  background: white;
+  aspect-ratio: 1;
+  width: 2rem;
+  border-radius: 1rem;
+  color: #99e2d0;
+}
+
+section.buttoncommander {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #f6f6f6;
+  margin-bottom: 1rem;
+}
+section.buttoncommander button {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1.2rem 4rem;
+  border: none;
+  border-radius: 2rem;
+  transition: all 170ms;
+  box-shadow: 1px 2px 12px -7px #000000;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  cursor: pointer;
+}
+section.buttoncommander button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bannerimg img {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+header:hover::before {
+  transform: translateY(-50%) scale(1.2);
+}
+header::before {
+  transition: transform 0.2s;
+  display: flex;
+  font-style: normal;
+  position: absolute;
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: "Font Awesome 5 Free";
+  --webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  top: 50%;
+  font-size: 22px;
+  transform: translateY(-50%);
+  content: "\f060";
+  left: 1rem;
+}
+
+.titre-restau {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-top: -2rem;
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
+}
+.titre-restau i {
+  font-size: 2.1rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.titre-restau .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 230ms ease-out;
+}
+.titre-restau:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+.titre-restau:active .fas {
+  transform: translateY(-50%) scale(1.1);
+}
+.titre-restau h2 {
+  padding: 0.5rem 0rem;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.resto-main {
+  padding: 0rem 1rem;
+  background-color: #f6f6f6;
+}
+.resto-main .plat-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1000px) {
+  .resto-main .plat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.resto-main .plat-grid h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.resto-main .plat-grid h3::after {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  width: 3.2rem;
+  background-color: #99e2d0;
+  top: 1.5rem;
+  left: 0rem;
+}
+.resto-main .plat-grid .plat-info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resto-main .plat-grid .plat-description {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 1px 2px 12px -7px #000000;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+.resto-main .plat-grid .plat-description:hover {
+  cursor: pointer;
+}
+.resto-main .plat-grid .plat-description:hover .card-check {
+  margin-right: 0;
+}
+.resto-main .plat-grid .plat-description:hover i {
+  animation: spin-check 0.5s;
+}
+@keyframes spin-check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.resto-main .plat-grid .plat-description h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resto-main .plat-grid .plat-description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resto-main .plat-grid .prix {
+  margin-left: auto;
+  padding: 1rem;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-end;
+}
+.resto-main .plat-grid .card-description {
+  padding: 1rem;
+  overflow: hidden;
+}
+.resto-main .card-check {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 0 1rem 1rem 0;
+  margin-right: -4rem;
+  background-color: #99e2d0;
+  width: 4rem;
+  transition: margin-right 0.5s;
+}
+.resto-main .card-check i {
+  display: grid;
+  place-items: center;
+  background: white;
+  aspect-ratio: 1;
+  width: 2rem;
+  border-radius: 1rem;
+  color: #99e2d0;
+}
+
+section.buttoncommander {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #f6f6f6;
+  margin-bottom: 1rem;
+}
+section.buttoncommander button {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1.2rem 4rem;
+  border: none;
+  border-radius: 2rem;
+  transition: all 170ms;
+  box-shadow: 1px 2px 12px -7px #000000;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  cursor: pointer;
+}
+section.buttoncommander button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bannerimg img {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+header:hover::before {
+  transform: translateY(-50%) scale(1.2);
+}
+header::before {
+  transition: transform 0.2s;
+  display: flex;
+  font-style: normal;
+  position: absolute;
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: "Font Awesome 5 Free";
+  --webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  top: 50%;
+  font-size: 22px;
+  transform: translateY(-50%);
+  content: "\f060";
+  left: 1rem;
+}
+
+.titre-restau {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-top: -2rem;
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
+}
+.titre-restau i {
+  font-size: 2.1rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.titre-restau .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 230ms ease-out;
+}
+.titre-restau:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+.titre-restau:active .fas {
+  transform: translateY(-50%) scale(1.1);
+}
+.titre-restau h2 {
+  padding: 0.5rem 0rem;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.resto-main {
+  padding: 0rem 1rem;
+  background-color: #f6f6f6;
+}
+.resto-main .plat-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1000px) {
+  .resto-main .plat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.resto-main .plat-grid h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.resto-main .plat-grid h3::after {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  width: 3.2rem;
+  background-color: #99e2d0;
+  top: 1.5rem;
+  left: 0rem;
+}
+.resto-main .plat-grid .plat-info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resto-main .plat-grid .plat-description {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 1px 2px 12px -7px #000000;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+.resto-main .plat-grid .plat-description:hover {
+  cursor: pointer;
+}
+.resto-main .plat-grid .plat-description:hover .card-check {
+  margin-right: 0;
+}
+.resto-main .plat-grid .plat-description:hover i {
+  animation: spin-check 0.5s;
+}
+@keyframes spin-check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.resto-main .plat-grid .plat-description h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resto-main .plat-grid .plat-description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resto-main .plat-grid .prix {
+  margin-left: auto;
+  padding: 1rem;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-end;
+}
+.resto-main .plat-grid .card-description {
+  padding: 1rem;
+  overflow: hidden;
+}
+.resto-main .card-check {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 0 1rem 1rem 0;
+  margin-right: -4rem;
+  background-color: #99e2d0;
+  width: 4rem;
+  transition: margin-right 0.5s;
+}
+.resto-main .card-check i {
+  display: grid;
+  place-items: center;
+  background: white;
+  aspect-ratio: 1;
+  width: 2rem;
+  border-radius: 1rem;
+  color: #99e2d0;
+}
+
+section.buttoncommander {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #f6f6f6;
+  margin-bottom: 1rem;
+}
+section.buttoncommander button {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1.2rem 4rem;
+  border: none;
+  border-radius: 2rem;
+  transition: all 170ms;
+  box-shadow: 1px 2px 12px -7px #000000;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  cursor: pointer;
+}
+section.buttoncommander button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 *,
