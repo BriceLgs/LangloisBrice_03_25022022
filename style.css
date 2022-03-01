@@ -30,11 +30,34 @@ a {
 }
 
 header {
+  padding-top: 2rem;
   font-family: "Shrikhand", cursive;
   text-align: center;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  padding: 0.3rem;
+  padding: 0.5rem 0.5rem;
   position: relative;
+}
+header img {
+  width: 9rem;
+  padding-top: 0.4rem;
+}
+header i {
+  display: flex;
+  font-style: normal;
+  position: absolute;
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: "Font Awesome 5 Free";
+  --webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  top: 50%;
+  font-size: 22px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-background-clip: text;
+  color: #000000;
+  font-size: 1.4rem;
+  padding-left: 0.4rem;
 }
 
 .ville {
@@ -325,26 +348,6 @@ a {
   object-position: center bottom;
 }
 
-header:hover::before {
-  transform: translateY(-50%) scale(1.2);
-}
-header::before {
-  transition: transform 0.2s;
-  display: flex;
-  font-style: normal;
-  position: absolute;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Free";
-  --webkit-font-smoothing: antialiased;
-  font-weight: 900;
-  top: 50%;
-  font-size: 22px;
-  transform: translateY(-50%);
-  content: "\f060";
-  left: 1rem;
-}
-
 .titre-restau {
   position: relative;
   padding: 1rem 1rem;
@@ -484,7 +487,6 @@ section.buttoncommander {
   padding: 4rem 0;
   text-align: center;
   background-color: #f6f6f6;
-  margin-bottom: 1rem;
 }
 section.buttoncommander button {
   margin-top: 1rem;
@@ -537,26 +539,6 @@ a {
   object-position: center bottom;
 }
 
-header:hover::before {
-  transform: translateY(-50%) scale(1.2);
-}
-header::before {
-  transition: transform 0.2s;
-  display: flex;
-  font-style: normal;
-  position: absolute;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Free";
-  --webkit-font-smoothing: antialiased;
-  font-weight: 900;
-  top: 50%;
-  font-size: 22px;
-  transform: translateY(-50%);
-  content: "\f060";
-  left: 1rem;
-}
-
 .titre-restau {
   position: relative;
   padding: 1rem 1rem;
@@ -696,7 +678,6 @@ section.buttoncommander {
   padding: 4rem 0;
   text-align: center;
   background-color: #f6f6f6;
-  margin-bottom: 1rem;
 }
 section.buttoncommander button {
   margin-top: 1rem;
@@ -749,26 +730,6 @@ a {
   object-position: center bottom;
 }
 
-header:hover::before {
-  transform: translateY(-50%) scale(1.2);
-}
-header::before {
-  transition: transform 0.2s;
-  display: flex;
-  font-style: normal;
-  position: absolute;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Free";
-  --webkit-font-smoothing: antialiased;
-  font-weight: 900;
-  top: 50%;
-  font-size: 22px;
-  transform: translateY(-50%);
-  content: "\f060";
-  left: 1rem;
-}
-
 .titre-restau {
   position: relative;
   padding: 1rem 1rem;
@@ -908,7 +869,6 @@ section.buttoncommander {
   padding: 4rem 0;
   text-align: center;
   background-color: #f6f6f6;
-  margin-bottom: 1rem;
 }
 section.buttoncommander button {
   margin-top: 1rem;
@@ -961,26 +921,6 @@ a {
   object-position: center bottom;
 }
 
-header:hover::before {
-  transform: translateY(-50%) scale(1.2);
-}
-header::before {
-  transition: transform 0.2s;
-  display: flex;
-  font-style: normal;
-  position: absolute;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Free";
-  --webkit-font-smoothing: antialiased;
-  font-weight: 900;
-  top: 50%;
-  font-size: 22px;
-  transform: translateY(-50%);
-  content: "\f060";
-  left: 1rem;
-}
-
 .titre-restau {
   position: relative;
   padding: 1rem 1rem;
@@ -1120,7 +1060,6 @@ section.buttoncommander {
   padding: 4rem 0;
   text-align: center;
   background-color: #f6f6f6;
-  margin-bottom: 1rem;
 }
 section.buttoncommander button {
   margin-top: 1rem;

@@ -12,21 +12,6 @@
     object-position: center bottom;
 }
 
-header{
-
-    &:hover::before {
-        @include zoom(1.2, translateY(-50%));
-        ;
-    }
-    
-    &::before {
-        transition: transform 0.2s;
-        @include font-awesome;
-        content: "\f060";
-        left: 1rem;
-    }
-        
-    }
 
 
 .titre-restau {
@@ -152,7 +137,6 @@ header{
             button {
         @include buttongradiant;
             }
-            margin-bottom: 1rem;
         }
 
 
