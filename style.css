@@ -230,19 +230,19 @@ header {
   background-size: cover;
 }
 .menus .card__img-1 {
-  background-image: url("./assets/plat-1.jpg");
+  background-image: url("assets/plat-1.jpg");
   background-size: cover;
 }
 .menus .card__img-2 {
-  background-image: url("./assets/plat-2.jpg");
+  background-image: url("assets/plat-2.jpg");
   background-size: cover;
 }
 .menus .card__img-3 {
-  background-image: url("./assets/plat-3.jpg");
+  background-image: url("assets/plat-3.jpg");
   background-size: cover;
 }
 .menus .card__img-4 {
-  background-image: url("./assets/plat-4.jpg");
+  background-image: url("assets/plat-4.jpg");
   background-size: cover;
 }
 .menus .card__info {
