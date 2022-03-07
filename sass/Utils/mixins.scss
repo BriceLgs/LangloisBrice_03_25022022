@@ -91,7 +91,7 @@
     inset: 0;
     z-index: 1;
     opacity: 1;
-    animation: disappear 2s forwards;
+    animation: disappear 1.6s forwards;
     transform-origin: top;
     i {
       position: absolute;
@@ -106,6 +106,10 @@
     @keyframes disappear {
         0% {
           opacity: 1;
+        }
+
+        50% {
+            opacity: 1;
         }
       
         100% {
