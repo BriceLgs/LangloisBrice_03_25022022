@@ -97,6 +97,9 @@
       position: absolute;
       top: 40%;
       left: 45%;
+      @media (max-width: 1000px) {
+          left: 30%;
+      }
       transform: translateY(-50%);
       transform: translateX(-50%);
       font-size: 130px;

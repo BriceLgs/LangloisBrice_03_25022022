@@ -144,6 +144,11 @@ header i {
   font-size: 130px;
   color: #9356dc;
 }
+@media (max-width: 1000px) {
+  .loader i {
+    left: 30%;
+  }
+}
 @keyframes disappear {
   0% {
     opacity: 1;
