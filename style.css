@@ -29,6 +29,14 @@ a {
   color: inherit;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 header {
   padding-top: 2rem;
   font-family: "Shrikhand", cursive;
@@ -77,6 +85,14 @@ header i {
   padding-bottom: 4px;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .reserver {
   margin-top: 2rem;
   text-align: center;
@@ -138,6 +154,14 @@ header i {
   }
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .fonctionnement {
   counter-reset: etapes;
   margin-bottom: 2rem;
@@ -202,6 +226,14 @@ header i {
   font-size: 1.4rem;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .menus {
   background-color: #f6f6f6;
 }
@@ -315,6 +347,14 @@ footer p {
   padding: 0.2rem;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 *,
 ::before,
 ::after {
@@ -417,21 +457,35 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .plat-description {
+.resto-main .plat-grid .plat-info .plat-description {
   background-color: white;
   overflow: hidden;
   display: flex;
   box-shadow: 1px 2px 12px -7px #000000;
   border-radius: 1rem;
   margin: 0.5rem;
+  animation: appear 1s;
+  animation-fill-mode: both;
 }
-.resto-main .plat-grid .plat-description:hover {
+.resto-main .plat-grid .plat-info .plat-description:nth-child(1) {
+  animation-delay: 100ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(2) {
+  animation-delay: 200ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(3) {
+  animation-delay: 300ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(4) {
+  animation-delay: 400ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:hover {
   cursor: pointer;
 }
-.resto-main .plat-grid .plat-description:hover .card-check {
+.resto-main .plat-grid .plat-info .plat-description:hover .card-check {
   margin-right: 0;
 }
-.resto-main .plat-grid .plat-description:hover i {
+.resto-main .plat-grid .plat-info .plat-description:hover i {
   animation: spin-check 0.5s;
 }
 @keyframes spin-check {
@@ -442,28 +496,28 @@ a {
     transform: rotate(0deg);
   }
 }
-.resto-main .plat-grid .plat-description h4 {
+.resto-main .plat-grid .plat-info .plat-description h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .plat-description p {
+.resto-main .plat-grid .plat-info .plat-description p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .prix {
+.resto-main .plat-grid .plat-info .prix {
   margin-left: auto;
   padding: 1rem;
   font-weight: 900;
   display: flex;
   align-items: flex-end;
 }
-.resto-main .plat-grid .card-description {
+.resto-main .plat-grid .plat-info .card-description {
   padding: 1rem;
   overflow: hidden;
 }
-.resto-main .card-check {
+.resto-main .plat-grid .card-check {
   flex-shrink: 0;
   display: grid;
   place-items: center;
@@ -473,11 +527,11 @@ a {
   width: 4rem;
   transition: margin-right 0.5s;
 }
-.resto-main .card-check i {
+.resto-main .plat-grid .card-check i {
   display: grid;
   place-items: center;
   background: white;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 2rem;
   border-radius: 1rem;
   color: #99e2d0;
@@ -506,6 +560,14 @@ section.buttoncommander button:hover {
   opacity: 0.9;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 *,
 ::before,
 ::after {
@@ -608,21 +670,38 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .plat-description {
+.resto-main .plat-grid .plat-info .plat-description {
   background-color: white;
   overflow: hidden;
   display: flex;
   box-shadow: 1px 2px 12px -7px #000000;
   border-radius: 1rem;
   margin: 0.5rem;
+  animation: appear 1s;
+  animation-fill-mode: both;
 }
-.resto-main .plat-grid .plat-description:hover {
+.resto-main .plat-grid .plat-info .plat-description:nth-child(1) {
+  animation-delay: 100ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(2) {
+  animation-delay: 200ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(3) {
+  animation-delay: 300ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(4) {
+  animation-delay: 400ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(5) {
+  animation-delay: 500ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:hover {
   cursor: pointer;
 }
-.resto-main .plat-grid .plat-description:hover .card-check {
+.resto-main .plat-grid .plat-info .plat-description:hover .card-check {
   margin-right: 0;
 }
-.resto-main .plat-grid .plat-description:hover i {
+.resto-main .plat-grid .plat-info .plat-description:hover i {
   animation: spin-check 0.5s;
 }
 @keyframes spin-check {
@@ -633,28 +712,28 @@ a {
     transform: rotate(0deg);
   }
 }
-.resto-main .plat-grid .plat-description h4 {
+.resto-main .plat-grid .plat-info .plat-description h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .plat-description p {
+.resto-main .plat-grid .plat-info .plat-description p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .prix {
+.resto-main .plat-grid .plat-info .prix {
   margin-left: auto;
   padding: 1rem;
   font-weight: 900;
   display: flex;
   align-items: flex-end;
 }
-.resto-main .plat-grid .card-description {
+.resto-main .plat-grid .plat-info .card-description {
   padding: 1rem;
   overflow: hidden;
 }
-.resto-main .card-check {
+.resto-main .plat-grid .card-check {
   flex-shrink: 0;
   display: grid;
   place-items: center;
@@ -664,11 +743,11 @@ a {
   width: 4rem;
   transition: margin-right 0.5s;
 }
-.resto-main .card-check i {
+.resto-main .plat-grid .card-check i {
   display: grid;
   place-items: center;
   background: white;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 2rem;
   border-radius: 1rem;
   color: #99e2d0;
@@ -697,6 +776,14 @@ section.buttoncommander button:hover {
   opacity: 0.9;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 *,
 ::before,
 ::after {
@@ -799,21 +886,35 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .plat-description {
+.resto-main .plat-grid .plat-info .plat-description {
   background-color: white;
   overflow: hidden;
   display: flex;
   box-shadow: 1px 2px 12px -7px #000000;
   border-radius: 1rem;
   margin: 0.5rem;
+  animation: appear 1s;
+  animation-fill-mode: both;
 }
-.resto-main .plat-grid .plat-description:hover {
+.resto-main .plat-grid .plat-info .plat-description:nth-child(1) {
+  animation-delay: 100ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(2) {
+  animation-delay: 200ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(3) {
+  animation-delay: 300ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(4) {
+  animation-delay: 400ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:hover {
   cursor: pointer;
 }
-.resto-main .plat-grid .plat-description:hover .card-check {
+.resto-main .plat-grid .plat-info .plat-description:hover .card-check {
   margin-right: 0;
 }
-.resto-main .plat-grid .plat-description:hover i {
+.resto-main .plat-grid .plat-info .plat-description:hover i {
   animation: spin-check 0.5s;
 }
 @keyframes spin-check {
@@ -824,28 +925,28 @@ a {
     transform: rotate(0deg);
   }
 }
-.resto-main .plat-grid .plat-description h4 {
+.resto-main .plat-grid .plat-info .plat-description h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .plat-description p {
+.resto-main .plat-grid .plat-info .plat-description p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .prix {
+.resto-main .plat-grid .plat-info .prix {
   margin-left: auto;
   padding: 1rem;
   font-weight: 900;
   display: flex;
   align-items: flex-end;
 }
-.resto-main .plat-grid .card-description {
+.resto-main .plat-grid .plat-info .card-description {
   padding: 1rem;
   overflow: hidden;
 }
-.resto-main .card-check {
+.resto-main .plat-grid .card-check {
   flex-shrink: 0;
   display: grid;
   place-items: center;
@@ -855,11 +956,11 @@ a {
   width: 4rem;
   transition: margin-right 0.5s;
 }
-.resto-main .card-check i {
+.resto-main .plat-grid .card-check i {
   display: grid;
   place-items: center;
   background: white;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 2rem;
   border-radius: 1rem;
   color: #99e2d0;
@@ -888,6 +989,14 @@ section.buttoncommander button:hover {
   opacity: 0.9;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 *,
 ::before,
 ::after {
@@ -990,21 +1099,35 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .plat-description {
+.resto-main .plat-grid .plat-info .plat-description {
   background-color: white;
   overflow: hidden;
   display: flex;
   box-shadow: 1px 2px 12px -7px #000000;
   border-radius: 1rem;
   margin: 0.5rem;
+  animation: appear 1s;
+  animation-fill-mode: both;
 }
-.resto-main .plat-grid .plat-description:hover {
+.resto-main .plat-grid .plat-info .plat-description:nth-child(1) {
+  animation-delay: 100ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(2) {
+  animation-delay: 200ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(3) {
+  animation-delay: 300ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:nth-child(4) {
+  animation-delay: 400ms;
+}
+.resto-main .plat-grid .plat-info .plat-description:hover {
   cursor: pointer;
 }
-.resto-main .plat-grid .plat-description:hover .card-check {
+.resto-main .plat-grid .plat-info .plat-description:hover .card-check {
   margin-right: 0;
 }
-.resto-main .plat-grid .plat-description:hover i {
+.resto-main .plat-grid .plat-info .plat-description:hover i {
   animation: spin-check 0.5s;
 }
 @keyframes spin-check {
@@ -1015,28 +1138,28 @@ a {
     transform: rotate(0deg);
   }
 }
-.resto-main .plat-grid .plat-description h4 {
+.resto-main .plat-grid .plat-info .plat-description h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .plat-description p {
+.resto-main .plat-grid .plat-info .plat-description p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.resto-main .plat-grid .prix {
+.resto-main .plat-grid .plat-info .prix {
   margin-left: auto;
   padding: 1rem;
   font-weight: 900;
   display: flex;
   align-items: flex-end;
 }
-.resto-main .plat-grid .card-description {
+.resto-main .plat-grid .plat-info .card-description {
   padding: 1rem;
   overflow: hidden;
 }
-.resto-main .card-check {
+.resto-main .plat-grid .card-check {
   flex-shrink: 0;
   display: grid;
   place-items: center;
@@ -1046,11 +1169,11 @@ a {
   width: 4rem;
   transition: margin-right 0.5s;
 }
-.resto-main .card-check i {
+.resto-main .plat-grid .card-check i {
   display: grid;
   place-items: center;
   background: white;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 2rem;
   border-radius: 1rem;
   color: #99e2d0;

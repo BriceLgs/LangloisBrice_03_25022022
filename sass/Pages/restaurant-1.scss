@@ -61,7 +61,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-    }
+
+        
+        
+    
     
     .plat-description {
             background-color: white;
@@ -70,6 +73,14 @@
             @include boxshadow-principale;
             border-radius: 1rem;
             margin: 0.5rem;
+            animation: appear 1s;
+
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+            }
+            animation-fill-mode: both;
             &:hover {
                 cursor: pointer;
                 .card-check {
@@ -120,7 +131,7 @@
                     display: grid;
                     place-items: center;
                     background: white;
-                    aspect-ratio: 1;
+                    aspect-ratio: 1 / 1;
                     width: 2rem;
                     border-radius: 1rem;
                     color: $color-tertiaire;
@@ -129,6 +140,7 @@
             }
             
         }
+    }   
         
         section.buttoncommander {
             padding: 4rem 0;
