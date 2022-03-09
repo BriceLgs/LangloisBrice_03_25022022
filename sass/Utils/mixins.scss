@@ -1,4 +1,4 @@
-@mixin heartlike {
+@mixin colorgradient {
     background-image: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1));
  };
 
@@ -39,7 +39,7 @@
         }
         .fas {
             color: transparent;
-            @include heartlike;
+            @include colorgradient;
             -webkit-background-clip: text;
             opacity: 0;
             transition: all 230ms ease-out;
@@ -75,7 +75,7 @@
        border-radius: 2rem;
        transition: all 170ms;
        @include boxshadow-principale;
-       @include heartlike;
+       @include colorgradient;
        cursor: pointer;
        &:hover {
         transform: scale(1.02);
@@ -91,17 +91,14 @@
     inset: 0;
     z-index: 1;
     opacity: 1;
-    animation: disappear 1.6s forwards;
+    animation: disappear 2.3s forwards;
     transform-origin: top;
     i {
-      position: absolute;
+      position: fixed;
+      margin-left: -80px;
       top: 40%;
-      left: 45%;
-      @media (max-width: 1000px) {
-          left: 30%;
-      }
-      transform: translateY(-50%);
-      transform: translateX(-50%);
+      left: 50%;
+      transform: translate( -50%, -50%);
       font-size: 130px;
       color: #9356dc;
     }
@@ -111,10 +108,13 @@
           opacity: 1;
         }
 
-        50% {
+        60% {
             opacity: 1;
         }
       
+        90% {
+            opacity: 0;
+        }
         100% {
           visibility: hidden;
           opacity: 0;
