@@ -31,10 +31,12 @@ a {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(65%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 header {
@@ -87,10 +89,12 @@ header i {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(65%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 .reserver {
@@ -162,10 +166,12 @@ header i {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(65%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 .fonctionnement {
@@ -234,10 +240,12 @@ header i {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(65%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 .menus {
@@ -355,10 +363,12 @@ footer p {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(65%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 *,
@@ -568,10 +578,12 @@ section.buttoncommander button:hover {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(65%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 *,
@@ -784,10 +796,12 @@ section.buttoncommander button:hover {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(65%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 *,
@@ -997,10 +1011,12 @@ section.buttoncommander button:hover {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(65%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 *,
